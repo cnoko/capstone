@@ -2,8 +2,8 @@ import camelcaseKeys from './camelcase-keys/index';
 import 'whatwg-fetch';
 
 const XPress = {};
-const baseUrl = 'http://localhost:4000/api';
-
+const baseUrl = 'http://capstone.bobby-good.tech/api';
+console.log(baseUrl);
 XPress.getSeries = () => {
   const url = `${baseUrl}/series`;
 

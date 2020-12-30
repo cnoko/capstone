@@ -7762,7 +7762,7 @@ __webpack_require__(253);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var XPress = {};
-var baseUrl = 'http://localhost:4000/api';
+var baseUrl = 'http://capstone.bobby-good.tech/api';
 
 XPress.getSeries = function () {
   var url = baseUrl + '/series';
