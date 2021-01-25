@@ -14,11 +14,11 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 app.use(errorHandler());
 app.use("/public", express.static(__dirname +'/public'));
+app.use("/api", apiRouter);
+
 app.use("/", (req, res) => {
 	    res.sendFile(path.join(__dirname + '/index.html'));
-});
-app.use("/api", apiRouter);
-app.listen(PORT, (err) => {
+});app.listen(PORT, (err) => {
 	if (err) {
 		console.log(err);
 	}
